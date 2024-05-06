@@ -72,3 +72,8 @@ class Companion extends Character {
         this.type = type;
     }
 }
+
+//Part 4: Class Uniforms
+Character.MAX_HEALTH = 100;
+Adventurer.ROLES = ["Fighter", "Healer", "Wizard"];
+
