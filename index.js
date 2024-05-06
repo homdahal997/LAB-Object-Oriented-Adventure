@@ -49,3 +49,26 @@ robin.companion.companion.inventory = ["small hat", "sunglasses"];
 // Test roll method for companions
 robin.companion.roll();
 robin.companion.companion.roll();
+
+//Part 3: Class Features
+class Adventurer extends Character {
+    constructor(name, role) {
+        super(name);
+        // Adventurers have specialized roles.
+        this.role = role;
+        // Every adventurer starts with a bed and 50 gold coins.
+        this.inventory.push("bedroll", "50 gold coins");
+    }
+    // Adventurers have the ability to scout ahead of them.
+    scout() {
+        console.log(`${this.name} is scouting ahead...`);
+        super.roll();
+    }
+}
+
+class Companion extends Character {
+    constructor(name, type) {
+        super(name);
+        this.type = type;
+    }
+}
