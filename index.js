@@ -80,23 +80,23 @@ class Companion extends Character {
 Character.MAX_HEALTH = 100;
 Adventurer.ROLES = ["Fighter", "Healer", "Wizard"];
 
-// // Part 5: Gather your Party
-// class AdventurerFactory {
-//     constructor(role) {
-//         this.role = role;
-//         this.adventurers = [];
-//     }
-//     generate(name) {
-//         const newAdventurer = new Adventurer(name, this.role);
-//         this.adventurers.push(newAdventurer);
-//     }
-//     findByIndex(index) {
-//         return this.adventurers[index];
-//     }
-//     findByName(name) {
-//         return this.adventurers.find((a) => a.name === name);
-//     }
-// }
+// Part 5: Gather your Party
+class AdventurerFactory {
+    constructor(role) {
+        this.role = role;
+        this.adventurers = [];
+    }
+    generate(name) {
+        const newAdventurer = new Adventurer(name, this.role);
+        this.adventurers.push(newAdventurer);
+    }
+    findByIndex(index) {
+        return this.adventurers[index];
+    }
+    findByName(name) {
+        return this.adventurers.find((a) => a.name === name);
+    }
+}
 
 // const healers = new AdventurerFactory("Healer");
 // const robin = healers.generate("Robin");

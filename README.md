@@ -17,6 +17,7 @@ This part introduces two new classes, `Adventurer` and `Companion`, which extend
 This part introduces static properties to the `Character` and `Adventurer` classes.
 
 
-## Expected Output
+## 5 Gather your party
 
-The program will output the details of the adventurer and their companions, as well as the results of several simulated die rolls.
+## Usage 
+This project is a fun way to learn about JavaScript objects, classes, and inheritance. Enjoy playing the game and feel free to extend it with your own features!
